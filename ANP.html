@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرکت آژند نوید پیوند - آموزش ترافیک</title>
+    <meta name="description" content="شرکت آژند نوید پیوند: آموزش ترافیک، قوانین راهنمایی و رانندگی، مشاوره و روانشناسی ترافیک، توسعه فرهنگ ترافیک و افزایش ایمنی در جاده‌ها. گالری تصاویر و ویدیوهای آموزشی.">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'B Nazanin', 'Iranian Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            direction: rtl;
+            overflow-x: hidden; /* Prevent horizontal scroll for the whole page */
+            overflow-y: auto; /* Enable vertical scroll for the whole page */
+            height: 100vh; /* Full viewport height, but allow overflow */
+            display: flex;
+            flex-direction: column; /* Arrange header, nav, main-content-wrapper, footer vertically */
+        }
+        .container {
+            width: 100%; /* For header/footer to span full iframe width */
+            max-width: 600px; /* Constrain main elements to iframe width */
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 0; /* Smaller padding */
+            text-align: center;
+            border-bottom: 5px solid #004085;
+            flex-shrink: 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5em; /* Smaller font size */
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
+        nav {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 0; /* Slightly smaller padding */
+            text-align: center;
+            flex-shrink: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 8px; /* Smaller margins */
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 4px 0;
+            transition: color 0.3s ease;
+            white-space: nowrap;
+            font-size: 0.95em; /* Slightly smaller font size */
+        }
+        nav ul li a:hover {
+            color: #d4edda;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            flex-shrink: 0;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+        footer .contact-info-footer {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        footer .contact-info-footer p {
+            margin: 5px 0;
+        }
+        footer .contact-info-footer strong {
+            color: #007bff;
+        }
+
+        /* Vertical Layout Specifics */
+        .main-content-wrapper {
+            flex-grow: 1; /* Allow this wrapper to take available vertical space */
+            padding: 0 10px; /* Add some horizontal padding to the wrapper */
+            box-sizing: border-box;
+            /* Removed horizontal scroll related styles */
+        }
+
+        .section {
+            display: block; /* Stack sections vertically */
+            width: 100%; /* Each section takes full iframe width (within container) */
+            max-width: 600px; /* Ensure sections don't exceed iframe width */
+            margin: 20px auto; /* Vertical spacing and centering */
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow-y: auto; /* Enable vertical scrolling within each section if content overflows */
+            box-sizing: border-box;
+        }
+        .section h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .section ul {
+            list-style: disc;
+            padding-right: 20px;
+            margin: 0;
+        }
+        .section ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Image and Video specific styles */
+        .gallery-item, .video-item {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .video-item p {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>شرکت آژند نوید پیوند</h1>
+        <p>پیشرو در آموزش و توسعه فرهنگ ترافیک</p>
+    </header>
+
+    <nav class="container">
+        <ul>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#services">خدمات</a></li>
+            <li><a href="#objectives">اهداف</a></li>
+            <li><a href="#features">ویژگی‌ها</a></li>
+            <li><a href="#gallery">گالری</a></li>
+            <li><a href="#videos">ویدیوها</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content-wrapper container">
+        <section id="about" class="section">
+            <h2>درباره ما</h2>
+            <p>
+                شرکت آژند نوید پیوند با هدف تبدیل فضای ترافیک از یک عرصه پرخطر به یک فضای مشترک، قانونمند و ایمن برای همه کاربران جاده فعالیت می‌کند. ما بر توسعه فرهنگ ترافیک، تقویت نظم و انضباط و کاهش رفتارهای پرخطر تاکید داریم.
+            </p>
+            <p>
+                هدف نهایی ما ایجاد همزیستی مسالمت‌آمیز در ترافیک و کاهش آسیب‌ها و تصادفات از طریق آموزش و فرهنگ‌سازی است. ما معتقدیم با تغییر نگرش و نهادینه کردن مسئولیت‌پذیری، می‌توانیم فضای ترافیک را برای همه کاربران امن‌تر کنیم.
+            </p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>خدمات ما</h2>
+            <ul>
+                <li>آموزش ترافیک جامع برای تمامی سنین</li>
+                <li>تبیین و تشریح قوانین راهنمایی و رانندگی</li>
+                <li>مشاوره فردی و گروهی در زمینه روانشناسی ترافیک</li>
+                <li>برگزاری کارگاه‌ها و سمینارها برای توسعه فرهنگ ترافیک</li>
+                <li>توسعه مسئولیت اجتماعی در قبال ایمنی ترافیک</li>
+                <li>افزایش ایمنی و آگاهی در مورد خطرات و چالش‌های ترافیک</li>
+                <li>نهادینه کردن احترام به قانون و حقوق شهروندی در رانندگی</li>
+                <li>ارائه موثرترین راه‌ها برای ایجاد عادات ایمن در رانندگی، پیاده‌روی و دوچرخه‌سواری</li>
+            </ul>
+        </section>
+
+        <section id="objectives" class="section">
+            <h2>اهداف ما</h2>
+            <ul>
+                <li>توسعه فرهنگ و مسئولیت‌پذیری شهروندان در حوزه ترافیک</li>
+                <li>تقویت نظم و انضباط اجتماعی و قانون‌مداری در استفاده از راه‌ها</li>
+                <li>کاهش رفتارهای پرخطر رانندگان و عابران پیاده</li>
+                <li>ایجاد فضای همزیستی مسالمت‌آمیز و توام با احترام در ترافیک شهری و بین‌شهری</li>
+                <li>کاهش چشمگیر آسیب‌ها، جراحات و تصادفات رانندگی</li>
+            </ul>
+        </section>
+
+        <section id="features" class="section">
+            <h2>سه ویژگی برجسته سایت ما</h2>
+            <ul>
+                <li><strong>توسعه فرهنگ ترافیک:</strong> تمرکز اصلی بر ارتقاء سطح فرهنگی جامعه در حوزه ترافیک و نه صرفاً آموزش قوانین.</li>
+                <li><strong>تأکید بر تغییر نگرش و نهادینه کردن فرهنگ:</strong> تلاش برای ایجاد تغییرات عمیق و پایدار در طرز تفکر و رفتار افراد نسبت به ترافیک و نهادینه کردن عادات ایمن.</li>
+                <li><strong>تأثیر مستقیم آموزش و پیشگیری از تصادفات:</strong> ارائه آموزش‌های کاربردی و مؤثر که به طور مستقیم منجر به کاهش تصادفات و افزایش ایمنی جاده‌ها می‌شود.</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>گالری تصاویر</h2>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/560x300?text=تصویر+1+آموزش+رانندگی" alt="آموزش رانندگی ایمن">
+                <p>آموزش رانندگی ایمن و دفاعی</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/560x300?text=تصویر+2+قوانین+ترافیک" alt="قوانین راهنمایی و رانندگی">
+                <p>آشنایی با جدیدترین قوانین راهنمایی و رانندگی</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/560x300?text=تصویر+3+فرهنگ+ترافیک" alt="توسعه فرهنگ ترافیک">
+                <p>همایش توسعه فرهنگ ترافیک</p>
+            </div>
+        </section>
+
+        <section id="videos" class="section">
+            <h2>ویدیوها</h2>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                <p>ویدیوی آموزشی: اهمیت رعایت فاصله طولی در رانندگی</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/M7lc1UVf-VE" allowfullscreen></iframe>
+                <p>مصاحبه: نقش روانشناسی در کاهش خطرات ترافیکی</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 شرکت آژند نوید پیوند. تمامی حقوق محفوظ است.</p>
+            <div class="contact-info-footer">
+                <h3>تماس با ما</h3>
+                <p><strong>آدرس:</strong> میدان امام حسین، خیابان منتظری، بن‌بست بایندر، پلاک ۱۵، طبقه پنجم</p>
+                <p><strong>تلفن:</strong> ۰۹۳۶۵۳۲۲۰۴۷</p>
+                <p><strong>ایمیل:</strong> info@ajandnavidpayvand.com (مثال)</p>
+                <p><strong>ساعات کاری:</strong> شنبه تا چهارشنبه، ۹ صبح تا ۵ عصر</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links (now for vertical scrolling)
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - document.querySelector('nav').offsetHeight - document.querySelector('header').offsetHeight, /* Adjust for fixed header/nav */
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
